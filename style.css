@@ -25,7 +25,7 @@ h1{
     align-items: center;
     padding: 20px;
     margin: 5px;
-    background : linear-gradient(rgba(177, 120, 120, 0.4), rgba(131, 136, 56, 0.4));
+    background : linear-gradient(rgba(167, 49, 49, 0.4), rgba(14, 24, 70, 0.4));
     border: 4px solid black;
     border-radius: 30px;
     box-shadow: 0 0 10px black,
@@ -33,20 +33,28 @@ h1{
     inset 0 0 10px black;
     
 }
-.screen_div{
+/* .screen_div{
     margin-top: 80px;
-}
+} */
 .screen{
 padding: 20px ;
 }
 #screen{
-    height: 90px;
-    width: 300px;
-    border-radius: 40px;
-    font-size: 43px;
-    border: none;
-    opacity: .4;
-    font-weight: 600;
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    min-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+#screen::-webkit-scrollbar{
+    display: block;
+    height: 3px;
 }
 
 button{
@@ -58,6 +66,7 @@ border: none;
 margin: 4px;
 background-color: rgb(7, 168, 160);
 box-shadow: 5px 5px 20px rgb(7, 168, 160);
+cursor: pointer;
 }
 .btn{
     background-color: rgb(184, 111, 16);
